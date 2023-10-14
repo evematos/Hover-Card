@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    background-color: #4d4d70;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .cards .green {
+    background-color: #90E0F3;
+  }
+  
+  .cards .purple {
+    background-color: #B8B3E9;
+  }
+  
+  .cards .pink {
+    background-color: #D999B9;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 350px; 
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 1em; 
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
